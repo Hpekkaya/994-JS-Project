@@ -16,45 +16,50 @@
 // people2.splice(3, 1, "Artie");
 // console.log("Generated new array (people2) :", people2);
 
-const people3 = "mustafa_selman@gmail.comt";
+
+let people3; // For Inner Loop
 const people4 = [
   "mustafa_selman@gmail.com",
   "mehmet_colak@hotmail.com",
   "yasin_sezer@yandex.comcar1",
 ];
-let length = people3[0].length;
-// console.log(length);
+let length = people4.length ;
 
-let UpCsa_0 = people3[0].toUpperCase();
-let text = UpCsa_0;
-let space_Num1=0;
-let space_Num=-1;
+// Outer Loop
+for (let j = 0; j < length; j++) {
+people3 = people4[j] 
 
-// Inner Loop
-for (let i in people3) {
-    space_Num1=Number(i)    
+  let UpCsa_0 = people3[0].toUpperCase(); // For the first Name
+  let text = UpCsa_0;
+  let space_Num1 = 0;  // Find the position of _
+  let space_Num = -1;  // Assign the number that will not enter the loop
 
-  if (i == 0) {
-    continue;
+  // Inner Loop
+  for (let i in people3) {
+    space_Num1 = Number(i);
+
+    if (i == 0) {  // For the first Name
+      continue;
+    } 
+    // Uppercase Surname
+    else if (space_Num1 == space_Num) {
+      let UpCsa = people3[i].toUpperCase();
+      text += UpCsa;
+      continue;
+    } 
+    // Assign " " in place of _
+    else if (people3[i] == "_") {
+      let space_0 = " ";
+      text += space_0;
+      space_Num = Number(i) + 1;
+      continue;
+    } 
+    // Break when comes to @ 
+    else if (people3[i] == "@") {
+      break;
+    } 
+    // Conconate the letters after exceptionals
+    else text += people3[i];
   }
-
-  else if (space_Num1 == space_Num) {
-    let UpCsa = people3[i].toUpperCase();
-    text += UpCsa;
-    continue;
-  }
-
-  else if (people3[i] == "_") {
-    let space_0 = " ";
-    text += space_0;
-    space_Num = Number(i)+1 ;
-    continue;
-  }
-
-  
-  else if (people3[i] == "@") {
-    break;
-  } 
-  else text += people3[i];
+  console.log(text);
 }
-console.log(text);
