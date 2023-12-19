@@ -63,3 +63,8 @@ people3 = people4[j]
   }
   console.log(text);
 }
+
+let number_Arr = [12,34,2,3,67,66,5,24];
+liste.number_Arr();
+console(number_Arr);
+
