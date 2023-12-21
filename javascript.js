@@ -27,6 +27,9 @@ const people4 = [
     "mustafa_selman@gmail.com",
     "mehmet_colak@hotmail.com",
     "yasin_sezer@yandex.comcar1",
+    "Ahmet_can@gmail.com",
+    "sammet_tatlak@hotmail.com",
+    "nuryasin_mensezer@yandex.comcar1",
 ];
 let length = people4.length;
 
