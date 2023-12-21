@@ -21,15 +21,15 @@ console.log("________________________________ \n");
 
 let people3; // For Inner Loop
 console.log("Names and Surnames is taken from e-mail address ");
-console.log("Names and Surnames ");
-console.log("-------  -------- ");
+console.log("Before Fulfil                      After Fulfil  ");
+console.log("------------------------           ---------------- ");
 const people4 = [
     "mustafa_selman@gmail.com",
     "mehmet_colak@hotmail.com",
-    "yasin_sezer@yandex.comcar1",
-    "Ahmet_can@gmail.com",
+    "yasin_sezerli@yandex.com",
+    "Ahmet_cantaner@gmail.com",
     "sammet_tatlak@hotmail.com",
-    "nuryasin_mensezer@yandex.comcar1",
+    "nuray_menselik@yandex.com",
 ];
 let length = people4.length;
 
@@ -70,7 +70,7 @@ for (let j = 0; j < length; j++) {
         // Conconate the letters after exceptionals
         else text += people3[i];
     }
-    console.log(text);
+    console.log(people3, " ------> ",text);
 }
 
 console.log("\n");
